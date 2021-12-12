@@ -1,0 +1,376 @@
+/* Page CSS relié à la page HTML avec un quizz */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#27acb8, #0E343C);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+}
+
+header a .logo {
+    width: 40%;
+    margin-left: -40px;
+    margin-top: 0px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header ul li .actuelle {
+    background: #fff;
+    color: #2b1055;
+}
+
+header ul li a:hover, 
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu a {
+    transition: 0.3s;
+}
+
+.menu:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #081519, transparent);
+    z-index: 4;
+}
+
+.menu img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 1;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(110px);
+}
+
+#btn:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+footer {
+    padding: 60px;
+    background-color: #0E353D;
+    color: #fff;
+}
+
+section  {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background: #081519;
+}
+
+#btnhaut {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    transition: 0.3s;
+}
+
+#btnhaut:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+.separation {
+    align-content: center;
+    background-color: #081519;
+}
+
+.separation img {
+    width: 100%;
+    height: 50px;
+}
+
+section  {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background: #081519;
+}
+
+section h2 {
+    font-size: 5.5em;
+    margin-bottom: 150px;
+    color: #fff;
+}
+
+section h2 span {
+    color: #addcf7;
+}
+
+.text {
+    display:flex;
+    justify-content: space-between;
+}
+
+.text img {
+    z-index:1;
+    margin: -30px;
+    width: 400px;
+    height: auto;
+    height: fit-content;
+}
+
+.text p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.text p a {
+    text-decoration: none;
+    color: #79bce2;
+    transition: 0.4s;
+}
+
+.text p a:hover {
+    text-decoration: underline;
+    color: rgb(250, 83, 83);
+}
+
+.text2 {
+    display:flex;
+    justify-content: space-between;
+}
+
+.text2 img {
+    z-index:1;
+    margin: -30px;
+    width: 400px;
+    height: auto;
+    height: fit-content;
+    margin-left: 100px;
+}
+
+.text2 p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.text2 p a {
+    text-decoration: none;
+    color: #79bce2;
+    transition: 0.4s;
+}
+
+.text2 p a:hover {
+    text-decoration: underline;
+    color: rgb(250, 83, 83);
+}
+
+#prochaine {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    translate: -300px;
+    transition: 0.3s;
+}
+
+#prochaine:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+#vrai {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    z-index: 4;
+    transition: 0.3s;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+#vrai:hover {
+    background: #19743c;
+    color: #ffffff;
+}
+
+#faux {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    z-index: 4;
+    transition: 0.3s;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#faux:hover {
+    background: #a72929;
+    color: #ffffff;
+}
+
+.choixmultiple {
+    display:none;
+    align-content:center;
+    text-decoration: none;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    z-index: 4;
+    transition: 0.3s;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.choixmultiple:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+#resultat {
+    display:none;
+}
+
+#restexte {
+    font-size: 2em;
+    color: #fff;
+}
+
+#commentaire {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+#restexte span {
+    color: #79bce2;
+}
+
+#btnprequizz {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(110px);
+    transition: 0.3s;
+    margin-bottom: 200px;
+}
+
+#btnprequizz:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #081519;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #addcf7;
+}
+
+:root {
+    scrollbar-color: #addcf7 #081519;
+    scrollbar-width: thin;
+}

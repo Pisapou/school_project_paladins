@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<!-- PAGE SUR LA RANKED | Informations sur la ranked sur Paladins -->
+
+<head>
+    <title>Paladins | Ranked</title>
+    <link rel="stylesheet" type="text/css" href="ranked.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+
+    <header>
+        <a href="first.html"><img src="img/Paladinsfr.png" class="logo"></a>
+        <ul>
+            <li><a href="first.html">Accueil</a></li>
+            <li><a href="jeux.html">Modes de Jeux</a></li>
+            <li><a href="champions.html">Champions</a></li>
+            <li><a href="ranked.html" class="actuelle">Ranked</a></li>
+            <li><a href="quizz.html">Quizz</a></li>
+        </ul>
+    </header>
+
+    <div class="menu" id="menu">
+        <img src="img/wallpaper4.jpg" id="wallpaper">
+        <h2 id="text">Ranked</h2>
+        <a href="#deroule" id="btn">Explorer</a>
+    </div>
+    <section id="deroule">
+        <h2>Un système de <span>Classement</span></h2>
+        <div class=textranked>
+            <p><br><br><br>
+                Paladins est munis d'un <a href="ranked.html">système de ranked</a> <i>(de l'anglais classé)</i>
+                permettant d'avoir des objectifs et jouer avec des joueurs de son niveau.
+                <br><br><br>Ainsi, vous trouverez un total de 7 rangs comportant chacun 5 divisions allant de la plus
+                grand à la plus petite.
+            </p>
+            <img src="img/img3.png" id="imgtxt">
+        </div>
+        <a href="#deroule2" id="btnranked">Voir la Suite</a>
+    </section>
+
+    <div class="separation" id="deroule2">
+        <img src="img/baton.png">
+    </div>
+
+    <div class="explication">
+        <h2>Tous les <span>Rangs</span></h2>
+        <img src="img/ranked.png">
+    </div>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <div class="explication2">
+        <h2>Toutes les <span>Divisions</span></h2>
+        <img src="img/division.png">
+    </div>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section>
+        <h2>Informations <span>Complémentaires</span></h2>
+        <div class="textranked">
+            <p><br><br>
+                Il y a tout de même un certains nombre d'informations complémentaires à savoir avant de se lancer dans
+                les ranked :
+                <br><br>
+                ○ Tout d'abord, plusieurs fonctionnalité sont ajouté en ranked comme le <a
+                    href="https://fr.wikipedia.org/wiki/Chat_en_ligne">chat vocal</a> <i>(permettant de communiquer avec
+                    ses alliés)</i> et
+                un système de composition d'équipe et de stratégie mélée a des bans de champions <i>(drafting)</i>.
+                <br><br>
+                ○ De plus, étant donné le système de <a
+                    href="https://gamoniac.wordpress.com/2013/05/17/definition-du-jour-quest-ce-quun-matchmaking/">matchmaking</a>,
+                le temps pour trouver une game est allongé à environ 10min.
+                <br><br>
+                ○ Uniquement le mode <a href="jeux.html#siege">siège</a> est disponible en classée.
+            </p>
+            <img src="img/ash_complement.png" class="imgtxt" id="imgtxt">
+        </div>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section>
+        <a href="#menu" id="btnhaut">Remonter</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 - Vladislas.B | All Right Reserved</p>
+    </footer>
+
+    <script>
+        let wallpaper = document.getElementById('wallpaper');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            wallpaper.style.top = value * 0.5 + 'px';
+        })
+    </script>
+
+</body>

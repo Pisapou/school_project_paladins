@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<!-- PAGE SUR LES CHAMPIONS | Informations sur chaque champion individuellement -->
+
+<head>
+    <title>Paladins | Les Champions</title>
+    <link rel="stylesheet" type="text/css" href="champions.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+
+    <header>
+        <a href="first.html"><img src="img/Paladinsfr.png" class="logo"></a>
+        <ul>
+            <li><a href="first.html">Accueil</a></li>
+            <li><a href="jeux.html">Modes de Jeux</a></li>
+            <li><a href="champions.html" class="actuelle">Champions</a></li>
+            <li><a href="ranked.html">Ranked</a></li>
+            <li><a href="quizz.html">Quizz</a></li>
+        </ul>
+    </header>
+
+    <div class="menu" id="menu">
+        <img src="img/wallpaper3.jpg" id="wallpaper">
+        <h2 id="text">Les Champions</h2>
+        <a href="#deroule" id="btn">Explorer</a>
+    </div>
+
+    <div id="deroule" class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section id="deroule2">
+        <div id="desc" class="desc">
+            <div class="descperso">
+                <h2 id="LeTitre">Un Champion</h2>
+                <p id="LeReste">Son Titre</p>
+                <p id="LaClasse">Sa Classe :<br><i>(xx PV)</i></p>
+                <audio id="audio" src="" controls></audio>
+                <img id="LogoClasse" src="">
+            </div>
+            <img id="Limage" src="">
+        </div>
+        <div>
+            <h2 id="titredesc" class="titredesc">Le <a href="#titredesc" onclick="deflore()">Lore</a></h2>
+            <p id="defpop1"><i>(Histoire d’un univers de fiction ne constituant pas l’intrigue principale d’une
+                    œuvre.)</i></p>
+            <p id="descplus"></p>
+
+            <div class="separation" id="sepdesc">
+                <img src="img/baton.png">
+            </div>
+
+            <h2 id="videodesc" class="videodesc">Les <a href="#videodesc" onclick="deflore2()">Capacités</a></h2>
+            <p id="defpop2"><i>(Vidéos du champion montrant ses capacités et son lore (dépent de la date de sortie du
+                    champion))</i></p>
+        </div>
+
+        <div id="divvideo" class="divvideo">
+            <iframe id="video" width="1120" height="630" src="https://www.youtube.com/embed/gYLIuhaOuog"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p id="avertissement"><i>Seulement disponible en anglais.</i></p>
+        </div>
+    </section>
+
+    <div class="separation" id="InfoPerso">
+        <img src="img/baton.png">
+    </div>
+
+    <section>
+        <h2>Plus d'<span>Informations</span></h2>
+        <div class="text">
+            <p>Vous souhaitez plus d'informations sur un champion en particulier ? Recherchez-le dans la barre
+                ci-dessous !<br><br><br><br></p>
+        </div>
+        <div class="flexbtn">
+            <input list="Champion" name="Champion" type="text" placeholder="Tapez ici">
+            <datalist id="Champion">
+                <option value="Androxus"></option>
+                <option value="Ash"></option>
+                <option value="Atlas"></option>
+                <option value="Azaan"></option>
+                <option value="Barik"></option>
+                <option value="BombKing">Bomb King</option>
+                <option value="Buck"></option>
+                <option value="Cassie"></option>
+                <option value="Corvus"></option>
+                <option value="Dredge"></option>
+                <option value="Drogoz"></option>
+                <option value="Evie"></option>
+                <option value="Fernando"></option>
+                <option value="Furia"></option>
+                <option value="Grohk"></option>
+                <option value="Grover"></option>
+                <option value="Imani"></option>
+                <option value="Inara"></option>
+                <option value="Io"></option>
+                <option value="Jenos"></option>
+                <option value="Khan"></option>
+                <option value="Kinessa"></option>
+                <option value="Koga"></option>
+                <option value="Lex"></option>
+                <option value="Lian"></option>
+                <option value="Maeve"></option>
+                <option value="Makoa"></option>
+                <option value="MalDamba">Mal'Damba</option>
+                <option value="Moji"></option>
+                <option value="Octavia"></option>
+                <option value="Pip"></option>
+                <option value="Raum"></option>
+                <option value="Rei"></option>
+                <option value="Ruckus"></option>
+                <option value="Saati"></option>
+                <option value="Seris"></option>
+                <option value="Sha Lin">Sha Lin</option>
+                <option value="Skye"></option>
+                <option value="Strix"></option>
+                <option value="Talus"></option>
+                <option value="Terminus"></option>
+                <option value="Tiberius"></option>
+                <option value="Torvald"></option>
+                <option value="Tyra"></option>
+                <option value="Vatu"></option>
+                <option value="Viktor"></option>
+                <option value="Vivian"></option>
+                <option value="Vora"></option>
+                <option value="Willo"></option>
+                <option value="Yagorath"></option>
+                <option value="Ying"></option>
+                <option value="Zhin"></option>
+            </datalist>
+            <div class=divbtn>
+                <a href="#deroule" id="btnchamp" class="btnchamp" onclick="cliquebtn()">✓</a>
+            </div>
+        </div>
+        <p id="erreur"></p>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section>
+        <h2>Tous les <span>Champions</span></h2>
+        <div class="listechamp">
+            <div class="dmg">
+                <h2>Dégâts</h2>
+                <ul>
+                    <li><a href="#deroule" onclick="listechampbtn('BombKing')">Bomb King</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Cassie')">Cassie</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Dredge')">Dredge</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Drogoz')">Drogoz</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Imani')">Imani</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Kinessa')">Kinessa</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Lian')">Lian</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Octavia')">Octavia</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Saati')">Saati</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Sha Lin')">Sha Lin</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Strix')">Strix</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Tiberius')">Tiberius</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Tyra')">Tyra</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Viktor')">Viktor</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Vivian')">Vivian</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Willo')">Willo</a></li>
+                </ul>
+            </div>
+            <img src="img/vertical.png">
+            <div class="tank">
+                <h2>Tank</h2>
+                <ul>
+                    <li><a href="#deroule" onclick="listechampbtn('Ash')">Ash</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Atlas')">Atlas</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Azaan')">Azaan</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Barik')">Barik</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Fernando')">Fernando</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Inara')">Inara</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Khan')">Khan</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Makoa')">Makoa</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Raum')">Raum</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Ruckus')">Ruckus</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Terminus')">Terminus</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Torvald')">Torvald</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Yagorath')">Yagorath</a></li>
+                </ul>
+            </div>
+            <img src="img/vertical.png">
+            <div class="flank">
+                <h2>Flank</h2>
+                <ul>
+                    <li><a href="#deroule" onclick="listechampbtn('Androxus')">Androxus</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Buck')">Buck</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Evie')">Evie</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Koga')">Koga</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Lex')">Lex</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Maeve')">Maeve</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Moji')">Moji</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Skye')">Skye</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Talus')">Talus</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Vatu')">Vatu</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Vora')">Vora</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Zhin')">Zhin</a></li>
+                </ul>
+            </div>
+            <img src="img/vertical.png">
+            <div class="healer">
+                <h2>Healer</h2>
+                <ul>
+                    <li><a href="#deroule" onclick="listechampbtn('Corvus')">Corvus</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Furia')">Furia</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Grohk')">Grohk</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Grover')">Grover</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Io')">Io</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Jenos')">Jenos</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('MalDamba')">Mal'Damba</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Pip')">Pip</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Rei')">Rei</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Seris')">Seris</a></li>
+                    <li><a href="#deroule" onclick="listechampbtn('Ying')">Ying</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section>
+        <a href="#menu" id="btnhaut">Remonter</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 - Vladislas.B | All Right Reserved</p>
+    </footer>
+
+    <script type="text/javascript" src="champions.js"></script>
+
+</body>
