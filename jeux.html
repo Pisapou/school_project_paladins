@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<!-- PAGE SUR LES MODES DE JEUX | Informations sur les différents modes de jeux disponibles -->
+
+<head>
+    <title>Paladins | Mode de Jeux</title>
+    <link rel="stylesheet" type="text/css" href="jeux.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<header>
+    <a href="index.html"><img src="img/Paladinsfr.png" class="logo"></a>
+    <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="jeux.html" class="actuelle">Modes de Jeux</a></li>
+        <li><a href="champions.html">Champions</a></li>
+        <li><a href="ranked.html">Ranked</a></li>
+        <li><a href="quizz.html">Quizz</a></li>
+    </ul>
+</header>
+
+<body>
+
+    <div class="menu" id="menu">
+        <img src="img/wallpaper2.png" id="wallpaper">
+        <h2 id="text">Modes de Jeux</h2>
+        <a href="#siege" id="btn">Explorer</a>
+    </div>
+    <section id="siege">
+        <h2>Le <span>Siège</span></h2>
+        <div class=textranked>
+            <p><br>
+                <span>Temps de Jeux</span> : ~ 20min
+                <br><br> <span>Nombre de Joueurs</span> : 5 vs 5
+                <br><br> <span>Explication</span> : Chaque round d'un siège se divise en 2 phase : la phase de capture
+                du point et la phase de pousse de la charge. La première
+                phase, celle de capture du point, comme l'assaut, consiste à rester le plus longtemps possible sur une
+                zone délimité au centre de la map afin d'arriver
+                le plus rapidement possible à 100% de capture de ce point. L'équipe qui y arrive le premier remporte un
+                point et la charge.
+                <br>Quand à la deuxième fase, elle consiste en, pour l'équipe possédant la charge, la poussez jusqu'au
+                point de spawn <i>(de l'anglais point d'apparition)</i>
+                de l'équipe adverse, si elle y arrive, elle reporte un second point. Tandis que pour l'autre équipe, à
+                pour mission d'empecher cette charge d'avancer
+                jusqu'a leur spawn en restant à côté, si ils y arrivent, cette équipe remporte un point.
+                <br><br>La première équipe à 4 points remporte la partie !
+            </p>
+            <img src="img/siege.jpg" class="imgtxt">
+        </div>
+        <div class="plussiege">
+            <a id="btnpluss" class="btnpluss" href="#separationsiege" onclick="popsiege()">Vidéo Explicative ▼</a>
+            <div id="separationsiege" class="separationsiege">
+                <img src="img/baton.png">
+            </div>
+            <iframe id="videos" width="1120" height="630" src="https://www.youtube.com/embed/7ltInxzS-6c"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section id="tdm">
+        <h2>Le <span>Match à Mort</span></h2>
+        <div class=textranked2>
+            <img src="img/tdm.jpg" class="imgtxt">
+            <p><br>
+                <span>Temps de Jeux</span> : ~ 5min
+                <br><br> <span>Nombre de Joueurs</span> : 5 vs 5
+                <br><br> <span>Explication</span> : Le principe est relativement simple : 2 équipes de cinq joueurs, sur
+                une carte, et dont le but est d'avoir
+                le maximum de kills <i>(de l'anglais meurtre)</i> et plus rapidement que l'équipe adverse.
+                <br><br>La première équipe à 40 kills remporte la partie !
+                <br>Où celle avec le plus de kills au bout de 10min.
+            </p>
+        </div>
+        <div class="plustdm">
+            <a id="btnplustdm" class="btnplustdm" href="#separationtdm" onclick="poptdm()">Vidéo Explicative ▼</a>
+            <div id="separationtdm" class="separationtdm">
+                <img src="img/baton.png">
+            </div>
+            <iframe id="videotdm" width="1120" height="630" src="https://www.youtube.com/embed/-q8AqUCZ_cs"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section id="assault">
+        <h2>L'<span>Assaut</span></h2>
+        <div class=textranked>
+            <p><br>
+                <span>Temps de Jeux</span> : ~ 10min
+                <br><br> <span>Nombre de Joueurs</span> : 5 vs 5
+                <br><br> <span>Explication</span> : Les équipes doivent atteindre 400 points pour remporter la victoire.
+                Pour obtenir ce score, il existe plusieurs moyens : prendre le contrôle de la zone centrale vous donnera
+                2 points par seconde alors qu'effectuer un kill vous octroiera 5 points. Si aucune des deux équipes
+                n'atteint le nombre de points requis, en l'espace de 10 minutes, c'est l'équipe ayant marquée le plus de
+                points qui remportera la partie !
+            </p>
+            <img src="img/assault.jpg" class="imgtxt">
+        </div>
+        <div class="plusa">
+            <a id="btnplusa" class="btnplusa" href="#separationa" onclick="popa()">Vidéo Explicative ▼</a>
+            <div id="separationa" class="separationa">
+                <img src="img/baton.png">
+            </div>
+            <iframe id="videoa" width="1120" height="630" src="https://www.youtube.com/embed/oR-ceX4KT54"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section>
+        <a href="#menu" id="btnhaut">Remonter</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 - Vladislas.B | All Right Reserved</p>
+    </footer>
+
+    <script>
+        let wallpaper = document.getElementById('wallpaper');
+        let separationsiege = document.getElementById('separationsiege');
+        let separationtdm = document.getElementById('separationtdm');
+        let separationa = document.getElementById('separationa');
+        let videos = document.getElementById('videos');
+        let videoa = document.getElementById('videoa');
+        let videotdm = document.getElementById('videotdm');
+        let btnpluss = document.getElementById("btnpluss");
+        let btnplusa = document.getElementById("btnplusa");
+        let btnplustdm = document.getElementById("btnplustdm");
+        let ouverts = "False";
+        let ouverttdm = "False";
+        let ouverta = "False";
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            wallpaper.style.top = value * 0.5 + 'px';
+        })
+
+        function popsiege() {
+            if (ouverts == "False") {
+                btnpluss.href = "#separationsiege";
+                btnpluss.innerHTML = "Vidéo Explicative ▲";
+                videos.style.display = "block";
+                separationsiege.style.display = "block";
+                ouverts = "True";
+            } else {
+                btnpluss.href = "#siege";
+                btnpluss.innerHTML = "Vidéo Explicative ▼";
+                videos.style.display = "none";
+                separationsiege.style.display = "none";
+                ouverts = "False";
+            }
+        }
+
+        function poptdm() {
+            if (ouverttdm == "False") {
+                btnplustdm.href = "#separationtdm";
+                btnplustdm.innerHTML = "Vidéo Explicative ▲";
+                videotdm.style.display = "block";
+                separationtdm.style.display = "block";
+                ouverttdm = "True";
+            } else {
+                btnplustdm.href = "#tdm";
+                btnplustdm.innerHTML = "Vidéo Explicative ▼";
+                videotdm.style.display = "none";
+                separationtdm.style.display = "none";
+                ouverttdm = "False";
+            }
+        }
+
+        function popa() {
+            if (ouverta == "False") {
+                btnplusa.href = "#separationa";
+                btnplusa.innerHTML = "Vidéo Explicative ▲";
+                videoa.style.display = "block";
+                separationa.style.display = "block";
+                ouverta = "True";
+            } else {
+                btnplusa.href = "#assault";
+                btnplusa.innerHTML = "Vidéo Explicative ▼";
+                videoa.style.display = "none";
+                separationa.style.display = "none";
+                ouverta = "False";
+            }
+        }
+    </script>
+
+</body>

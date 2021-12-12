@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<!-- PAGE QUIZZ | Un quizz sur le jeux Paladins -->
+
+<head>
+    <title>Paladins | Le Quizz</title>
+    <link rel="stylesheet" type="text/css" href="quizz.css">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="img/Paladinsfr.png" class="logo"></a>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="jeux.html">Modes de Jeux</a></li>
+            <li><a href="champions.html">Champions</a></li>
+            <li><a href="ranked.html">Ranked</a></li>
+            <li><a href="quizz.html" class="actuelle">Quizz</a></li>
+        </ul>
+    </header>
+
+    <div class="menu" id="menu">
+        <img src="img/wallpaper5.png" id="wallpaper">
+        <h2 id="text">Le Quizz</h2>
+        <a href="#prequizz" id="btn">Explorer</a>
+    </div>
+
+    <section id="prequizz">
+        <a href="#deroule" id="btnprequizz" onclick="commencequizz()">Commencer le quizz</a>
+    </section>
+
+    <section id="question">
+        <h2 id="deroule"><span>Quizz</span> - Paladins</h2>
+        <div class="text">
+            <p id="laquestion"></p>
+            <img src="img/thinking.png">
+        </div>
+        <a href="#deroule2" class="vraifaux" id="vrai" onclick="vrai()">Vrai</a> <a href="#deroule2" class="vraifaux"
+            id="faux" onclick="faux()">Faux</a>
+        <a href="#deroule2" class="choixmultiple" id="choix1" onclick="choix1()">Choix 1</a> <a href="#deroule2"
+            class="choixmultiple" id="choix2" onclick="choix2()">Choix 2</a>
+        <br><a href="#deroule2" class="choixmultiple" id="choix3" onclick="choix3()">Choix 3</a> <a href="#deroule2"
+            class="choixmultiple" id="choix4" onclick="choix4()">Choix 4</a>
+    </section>
+
+    <section id="resultat">
+        <h2>Le Résultat</h2>
+        <p id="restexte">Error</p>
+        <p id="commentaire">Error</p>
+        <a href="#deroule" id="btnprequizz" onclick="recommencequizz()">Recommencer le quizz</a>
+    </section>
+
+    <div class="separation">
+        <img src="img/baton.png">
+    </div>
+
+    <section id="solution">
+        <h2 id="deroule2"><span>Quizz</span> - Réponse</h2>
+        <div class="text2">
+            <p id="lasolution"></p>
+            <img src="img/yes.png">
+        </div>
+        <a href="#deroule" id="prochaine" onclick="prochaine()">Prochaine Question</a>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 - Vladislas.B | All Right Reserved</p>
+    </footer>
+
+    <script type="text/javascript" src="quizz.js"></script>
+
+</body>

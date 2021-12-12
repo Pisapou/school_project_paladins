@@ -1,0 +1,542 @@
+/* Page CSS relié à la page HTML sur la page d'accueil */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#27acb8, #0E343C);
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+}
+
+header a .logo {
+    width: 40%;
+    margin-left: -40px;
+    margin-top: 0px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+header ul li .actuelle {
+    background: #fff;
+    color: #2b1055;
+}
+
+header ul li a:hover, 
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu a {
+    transition: 0.3s;
+}
+
+.menu:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #081519, transparent);
+    z-index: 4;
+}
+
+.menu img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 1;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(110px);
+}
+
+#btn:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+
+section  {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    background: #081519;
+}
+
+section h2 {
+    font-size: 5.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+section h2 span {
+    color: #addcf7;
+}
+
+.text {
+    display:flex;
+    justify-content: space-between;
+}
+
+.text img {
+    z-index:1;
+    margin: -30px;
+    width: 200% + 100px;
+    height: auto;
+    height: fit-content;
+}
+
+.text p {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.text p a {
+    text-decoration: none;
+    color: #79bce2;
+    transition: 0.4s;
+}
+
+.text p a:hover {
+    text-decoration: underline;
+    color: rgb(250, 83, 83);
+}
+
+section .jeux {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+section .jeux .card1 {
+    transition: 0.4s;
+    padding: 15px;
+}
+
+section .jeux .card1:hover {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+section .jeux .card2 {
+    transition: 0.4s;
+    padding: 15px;
+}
+
+section .jeux .card2:hover {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+section .jeux .card3 {
+    transition: 0.4s;
+    padding: 15px;
+}
+
+
+section .jeux .card3:hover {
+    transform: scale(1.1);
+    z-index: 100;
+}
+
+.card1 .modedejeu p {
+    opacity:0;
+    font-size: 50px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    color:#c9bd1c;
+    background-color:rgba(126, 126, 126, 0.308);
+    width:440px;
+    height:650px;
+    transition: all 400ms ease-out;
+    text-align:center;
+    padding-top: 260px;
+    border: solid;
+    border-color: #c9bd1c;
+    border-width: 10px;
+}
+
+.card1 .modedejeu span {
+    font-size: 25px;
+}
+
+.card1 .modedejeu a {
+    opacity: 0;
+    position: absolute;
+    top:330px;
+    left:135px;
+}
+
+.card1:hover .modedejeu p {
+    opacity: 1;
+}
+
+.card1:hover .modedejeu a {
+    opacity: 1;
+}
+
+.card1 img {
+    width: 420px;
+    height: 630px;
+}
+
+.card2 .modedejeu p {
+    opacity:0;
+    font-size: 50px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    color:#c23636;
+    background-color:rgba(126, 126, 126, 0.308);
+    width:440px;
+    height:650px;
+    transition: all 400ms ease-out;
+    text-align:center;
+    padding-top: 260px;
+    border: solid;
+    border-color: #c91e1e;
+    border-width: 10px;
+}
+
+.card2 .modedejeu span {
+    font-size: 25px;
+}
+
+.card2 .modedejeu a {
+    opacity: 0;
+    position: absolute;
+    top:330px;
+    left:135px;
+}
+
+.card2:hover .modedejeu p {
+    opacity: 1;
+}
+
+.card2:hover .modedejeu a {
+    opacity: 1;
+}
+
+.card2 img {
+    width: 420px;
+    height: 630px;
+}
+
+.card3 .modedejeu p {
+    opacity:0;
+    font-size: 50px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    color:#2bb34d;
+    background-color:rgba(126, 126, 126, 0.308);
+    width:440px;
+    height:650px;
+    transition: all 400ms ease-out;
+    text-align:center;
+    padding-top: 260px;
+    border: solid;
+    border-color: #19a83d;
+    border-width: 10px;
+}
+
+.card3 .modedejeu span {
+    font-size: 25px;
+}
+
+.card3 .modedejeu a {
+    opacity: 0;
+    position: absolute;
+    top:330px;
+    left:135px;
+}
+
+.card3:hover .modedejeu p {
+    opacity: 1;
+}
+
+.card3:hover .modedejeu a {
+    opacity: 1;
+}
+
+.card3 img {
+    width: 420px;
+    height: 630px;
+}
+
+#btnjeu1 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(110px);
+    transition: 0.3s;
+}
+
+#btnjeu1:hover {
+    background: #c9bd1c;
+    color: #ffffff;
+}
+
+#btnjeu2 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(110px);
+    transition: 0.3s;
+}
+
+#btnjeu2:hover {
+    background: #c91e1e;
+    color: #ffffff;
+}
+
+#btnjeu3 {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    transform: translateY(110px);
+    transition: 0.3s;
+}
+
+#btnjeu3:hover {
+    background: #19a83d;
+    color: #ffffff;
+}
+
+footer {
+    padding: 60px;
+    background-color: #0E353D;
+    color: #fff;
+}
+
+.textinverse {
+    display:flex;
+    justify-content: space-between;
+}
+
+.textinverse img {
+    z-index:1;
+    margin: -30px;
+    height:fit-content;
+}
+
+.textinverse p {
+    font-size: 1.5em;
+    color: #fff;
+    flex: 1;
+    margin: -30px 30px;
+    text-align: left;
+}
+
+.textinverse p a {
+    text-decoration: none;
+    color: #79bce2;
+    transition: 0.4s;
+}
+
+.textinverse p a:hover {
+    text-decoration: underline;
+    color: rgb(250, 83, 83);
+}
+
+#btnchampion {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    translate: 300px;
+    transition: 0.3s;
+}
+
+#btnchampion:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+.textranked {
+    display:flex;
+    justify-content: space-between;
+}
+
+.textranked img {
+    z-index:1;
+    margin: -30px;
+    height:fit-content;
+}
+
+.textranked p {
+    font-size: 1.5em;
+    color: #fff;
+    flex: 1;
+    margin: -30px 0px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.textranked p a {
+    text-decoration: none;
+    color: #79bce2;
+    transition: 0.4s;
+}
+
+.textranked p a:hover {
+    text-decoration: underline;
+    color: rgb(250, 83, 83);
+}
+
+#btnranked {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    translate: -300px;
+    transition: 0.3s;
+}
+
+#btnranked:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+.separation {
+    align-content: center;
+    background-color: #081519;
+}
+
+.separation img {
+    width: 100%;
+    height: 50px;
+}
+
+#btnhaut {
+    align-content:center;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    z-index: 4;
+    transition: 0.3s;
+}
+
+#btnhaut:hover {
+    background: #0E353D;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #081519;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #addcf7;
+}
+
+:root {
+    scrollbar-color: #addcf7 #081519;
+    scrollbar-width: thin;
+}
