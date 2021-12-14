@@ -1,6 +1,6 @@
 /* Explication du fonctionnement :
 Il y a 20 questions de type Vrai ou Faux et 20 questions à choix multiples.
-Je choisis de façon aléatoire 5 questions de chaque catégorie (évidamment différentes les une des autres) -> De façon à avoir 10 questions.
+Je choisis de façon aléatoire 5 questions de chaque catégorie (évidemment différentes les une des autres) -> De façon à avoir 10 questions.
 Je compte les points et l'affiche à la fin.
 
 Le code peut paraitre très long ou complexe, mais la plupart de celui ci est tout simplement du texte tel que les questions / réponses.*/
