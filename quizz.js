@@ -43,6 +43,7 @@ secquestion.style.display = "none";
 function commencequizz() {
     secquestion.style.display = "block";
     prequizz.style.display = "none";
+    titre.innerHTML = "<span>Quizz</span> - Paladins <i>(" + tour + "/10)</i>";
 }
 
 function recommencequizz() {
