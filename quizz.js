@@ -280,7 +280,7 @@ function affichequestion() {
                 explication = "L'ultime d'Androxus se nomme 'Bras Maudit'.";
                 dejachoixmultiple.push(9);
                 break;
-            case 10: question.innerHTML = "A qu'elle niveau peut-on débloqué le skin 'obsidienne' d'un champion ?";
+            case 10: question.innerHTML = "A qu'elle niveau peut-on débloquer le skin 'obsidienne' d'un champion ?";
                 btnc1.innerHTML = "niveau 14";
                 btnc2.innerHTML = "niveau 20";
                 btnc3.innerHTML = "niveau Max";
@@ -289,7 +289,7 @@ function affichequestion() {
                 explication = "Le skin 'obsidienne' d'un champion est débloqué au niveau 14.";
                 dejachoixmultiple.push(10);
                 break;
-            case 11: question.innerHTML = "A qu'elle niveau peut-on débloqué le skin 'cosmique' d'un champion ?";
+            case 11: question.innerHTML = "A qu'elle niveau peut-on débloquer le skin 'cosmique' d'un champion ?";
                 btnc1.innerHTML = "niveau 14";
                 btnc2.innerHTML = "niveau 20";
                 btnc3.innerHTML = "niveau Max";
@@ -298,7 +298,7 @@ function affichequestion() {
                 explication = "Le skin 'cosmique' d'un champion est débloqué au niveau 20.";
                 dejachoixmultiple.push(11);
                 break;
-            case 12: question.innerHTML = "A qu'elle niveau peut-on débloqué le titre d'un champion ?";
+            case 12: question.innerHTML = "A qu'elle niveau peut-on débloquer le titre d'un champion ?";
                 btnc1.innerHTML = "niveau 20";
                 btnc2.innerHTML = "C'est payant";
                 btnc3.innerHTML = "niveau 30";
@@ -307,7 +307,7 @@ function affichequestion() {
                 explication = "Le titre d'un champion est débloqué au niveau 30.";
                 dejachoixmultiple.push(12);
                 break;
-            case 13: question.innerHTML = "Combien de skin maeve possède-t-elle <i>(tout skin compris)</i> ?";
+            case 13: question.innerHTML = "Combien de skin maeve possède-t-elle <i>(skin par défaut et recolor compris)</i> ?";
                 btnc1.innerHTML = "17";
                 btnc2.innerHTML = "14";
                 btnc3.innerHTML = "7";
@@ -325,7 +325,7 @@ function affichequestion() {
                 explication = "Yagorath possède 6 yeux, 3 de chaque côtés.";
                 dejachoixmultiple.push(14);
                 break;
-            case 15: question.innerHTML = "Combien de dégâts fait l'ult Jenos ?";
+            case 15: question.innerHTML = "Combien de dégâts fait l'ultime Jenos ?";
                 btnc1.innerHTML = "2200";
                 btnc2.innerHTML = "2600";
                 btnc3.innerHTML = "2400";
